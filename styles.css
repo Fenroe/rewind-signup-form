@@ -1,10 +1,66 @@
+@font-face {
+  font-family: norse-bold;
+  src: url("./assets/fonts/Norse-Bold.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-h1 {
+.logo-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 16px;
+  position: absolute;
+  top: calc(33% - calc(7rem + 16px));
+  left: 0;
+  right: 0;
+}
+
+.logo-img {
+  height: 7rem;
+}
+
+.logo-text {
+  font-family: norse-bold;
   font-size: 5rem;
-  color: pink;
+}
+
+.attribution-bar {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px;
+  text-align: center;
+  color: #f9fafc;
+}
+
+.attribution-text > a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.img-sidebar {
+  flex: 1;
+  position: relative;
+  background-image: url("./assets/images/signup-background.avif");
+  background-size: cover;
+}
+
+.main {
+  flex: 2;
+  padding: 80px;
 }
