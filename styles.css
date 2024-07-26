@@ -8,6 +8,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  color: #3f4042;
+}
+
+input {
+  all: unset;
+}
+
+button {
+  all: unset;
 }
 
 .logo-bar {
@@ -30,6 +39,7 @@
 .logo-text {
   font-family: norse-bold;
   font-size: 5rem;
+  color: white;
 }
 
 .attribution-bar {
@@ -43,8 +53,12 @@
   color: #f9fafc;
 }
 
+.attribution-text {
+  color: #f9fafc;
+}
+
 .attribution-text > a {
-  color: inherit;
+  color: #f9fafc;
   text-decoration: underline;
 }
 
@@ -62,5 +76,94 @@
 
 .main {
   flex: 2;
-  padding: 80px;
+  padding: 64px 0;
+  background-color: #f9fafc;
+}
+
+.main-text-container {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: min(720px, 100%);
+  font-size: 0.8rem;
+  color: #3f4042;
+}
+
+.form-container {
+  background-color: white;
+  padding: 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.form-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: min(720px, 100%);
+  column-gap: 40px;
+  row-gap: 16px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 4px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fefefe;
+}
+
+.form-input:invalid {
+  border-color: red;
+}
+
+.form-input:focus {
+  border-color: blue;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.button-container {
+  padding: 48px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.signup-button {
+  background-color: #596d48;
+  color: white;
+  padding: 12px 32px;
+  align-self: flex-start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.button-container > h3 {
+  color: #3f4042;
+}
+
+.login-href {
+  text-decoration: none;
+  color: #596d48;
 }
